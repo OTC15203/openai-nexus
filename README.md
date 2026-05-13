@@ -62,7 +62,8 @@ ChatCompletion completion = client.CompleteChat("Say 'this is a test.'");
 Console.WriteLine($"[ASSISTANT]: {completion.Content[0].Text}");
 ```
 
-While you can pass your API key directly as a string, it is highly recommended that you keep it in a secure location and instead access it via an environment variable or configuration file as shown above to avoid storing it in source control.
+> [!IMPORTANT]
+> While you can pass your API key directly as a string, it is highly recommended that you keep it in a secure location and instead access it via an environment variable or configuration file as shown above to avoid storing it in source control.
 
 ### Using a custom base URL and API key
 
