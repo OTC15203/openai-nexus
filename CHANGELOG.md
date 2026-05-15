@@ -191,7 +191,7 @@ Thank you to our developer community members who helped to make the OpenAI clien
       - `RealtimeServerUpdateResponseOutputTextDone`
       - `RealtimeServerUpdateSessionCreated`
       - `RealtimeServerUpdateSessionUpdated`
-  - We recommend checking out our [examples](https://github.com/openai/openai-dotnet/tree/main/examples/Realtime) and tests as well as the [migration guide](https://developers.openai.com/api/docs/guides/realtime/#beta-to-ga-migration) for tips on how to use the new API surface.
+  - We recommend checking out our [examples](examples/Realtime) and tests as well as the [migration guide](https://developers.openai.com/api/docs/guides/realtime/#beta-to-ga-migration) for tips on how to use the new API surface.
 - OpenAI.Responses:
   - Removed the `Model` property of the `ResponsesClient` in favor of specifying the model on a per-call basis when calling `CreateResponse`/`CreateResponseAsync` or `CreateResponseStreaming`/`CreateResponseStreamingAsync`. To do this, set the `Model` property of the `CreateResponseOptions` parameter. With this change, users no longer have to provide a model unless it is actually needed.
   - Changed the type of the `Instructions` property of `ResponseResult` from `string` to `IList<ResponseItem>` to handle multi-item instructions.
@@ -214,7 +214,7 @@ Thank you to our developer community members who helped to make the OpenAI clien
 ### Breaking Changes in Preview APIs
 
 - OpenAI.Responses:
-  - Until now, this feature area has been marked as experimental via the `[Experimental]` attribute. As we prepare to stabilize it and remove its experimental designation, we are cleaning up the APIs to better align them with the service REST APIs, as well as to offer more flexibility and improve usability. See our [examples](https://github.com/openai/openai-dotnet/tree/main/examples/Responses) for helpful references on how to use the updated APIs.
+  - Until now, this feature area has been marked as experimental via the `[Experimental]` attribute. As we prepare to stabilize it and remove its experimental designation, we are cleaning up the APIs to better align them with the service REST APIs, as well as to offer more flexibility and improve usability. See our [examples](examples/Responses) for helpful references on how to use the updated APIs.
     - The `OpenAIResponseClient` class has been renamed to `ResponsesClient`.
     - The `ResponseCreationOptions` class has been renamed to `CreateResponseOptions`.
     - The `OpenAIResponse` class has been renamed to `ResponseResult`.
@@ -266,8 +266,8 @@ Thank you to our developer community members who helped to make the OpenAI clien
   - Added the `Minimal` property to `ChatReasoningEffortLevel`. _(A community contribution, courtesy of [kurnakovv](https://github.com/kurnakovv))_
   - Added support for System.Client.Model's `JsonPatch`, which enables users to get and set additional JSON properties in response and request payloads.
     - See the following examples for more information:
-      - [AdditionalProperties](https://github.com/openai/openai-dotnet/blob/main/examples/Chat/Example10_AdditionalProperties.cs)
-      - [AdditionalPropertiesAsync](https://github.com/openai/openai-dotnet/blob/main/examples/Chat/Example10_AdditionalPropertiesAsync.cs)
+      - [AdditionalProperties](examples/Chat/Example10_AdditionalProperties.cs)
+      - [AdditionalPropertiesAsync](examples/Chat/Example10_AdditionalPropertiesAsync.cs)
       - Go to the OpenAI.Responses section in this changelog for more examples that can be extrapolated to Chat.
 - OpenAI.Conversations:
   - Introduced the new `ConversationClient` to support the Conversations API with protocol methods for the following operations:
@@ -288,12 +288,12 @@ Thank you to our developer community members who helped to make the OpenAI clien
     - Users can add the new `ImageGenerationTool` to the `Tools` property of their `ResponseCreationOptions` and configure it using properties such as `Background`, `Quality`, `Size`, and more.
   - Added support for System.Client.Model's `JsonPatch`, which enables users to get and set additional JSON properties in response and request payloads.
     - See the following examples for more information:
-      - [InputAdditionalProperties](https://github.com/openai/openai-dotnet/blob/main/examples/Responses/Example07_InputAdditionalProperties.cs)
-      - [InputAdditionalPropertiesAsync](https://github.com/openai/openai-dotnet/blob/main/examples/Responses/Example07_InputAdditionalPropertiesAsync.cs)
-      - [OutputAdditionalProperties](https://github.com/openai/openai-dotnet/blob/main/examples/Responses/Example08_OutputAdditionalProperties.cs)
-      - [OutputAdditionalPropertiesAsync](https://github.com/openai/openai-dotnet/blob/main/examples/Responses/Example08_OutputAdditionalPropertiesAsync.cs)
-      - [ModelOverridePerRequest](https://github.com/openai/openai-dotnet/blob/main/examples/Responses/Example09_ModelOverridePerRequest.cs)
-      - [ModelOverridePerRequestAsync](https://github.com/openai/openai-dotnet/blob/main/examples/Responses/Example09_ModelOverridePerRequestAsync.cs)
+      - [InputAdditionalProperties](examples/Responses/Example07_InputAdditionalProperties.cs)
+      - [InputAdditionalPropertiesAsync](examples/Responses/Example07_InputAdditionalPropertiesAsync.cs)
+      - [OutputAdditionalProperties](examples/Responses/Example08_OutputAdditionalProperties.cs)
+      - [OutputAdditionalPropertiesAsync](examples/Responses/Example08_OutputAdditionalPropertiesAsync.cs)
+      - [ModelOverridePerRequest](examples/Responses/Example09_ModelOverridePerRequest.cs)
+      - [ModelOverridePerRequestAsync](examples/Responses/Example09_ModelOverridePerRequestAsync.cs)
       - Go to the OpenAI.Chat section for more examples that can be extrapolated to Responses.
 - OpenAI.Videos:
   - Introduced the new `VideoClient` to support the Videos API with protocol methods for the following operations:
@@ -1127,4 +1127,4 @@ This is the official OpenAI client library for C# / .NET. It provides convenient
 
 If you are a user migrating from version 1.11.0 or earlier, we will soon share a migration guide to help you get started.
 
-- ***Addendum:** the [migration guide](https://github.com/openai/openai-dotnet/blob/main/MigrationGuide.md) is now available.*
+- ***Addendum:** the [migration guide](docs/MigrationGuide.md) is now available.*
