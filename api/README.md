@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../eng/OpenAI.png" width="128" alt="OpenAI Logo" />
+</p>
+
 # API Listings
 
 The `.cs` files in this directory are **auto-generated** and must not be modified manually.
