@@ -217,7 +217,7 @@ using OpenAI.Responses;          // Regular C# code follows
 
 ## Additional resources
 
-- [OpenAI .NET SDK Documentation](https://github.com/openai/openai-dotnet)
+- [OpenAI .NET SDK Documentation](../README.md)
 - [.NET 10 Preview Documentation](https://docs.microsoft.com/dotnet/core/whats-new/dotnet-10)
 - [OpenAI API Documentation](https://platform.openai.com/docs)
 - [Single-File Applications in .NET 10](https://devblogs.microsoft.com/dotnet/announcing-dotnet-run-app/)
