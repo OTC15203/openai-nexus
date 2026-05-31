@@ -1,0 +1,3 @@
+## 2025-05-22 - Documentation Branding and Accessibility Pattern
+**Learning:** In technical SDK repositories, repository branding via centered logos in README files significantly improves professional feel. Using HTML `<p align="center">` tags allows for precise control over image presentation (width, alignment) while ensuring accessibility through `alt` attributes. Adding `title` attributes to Markdown badges provides necessary context for icon-only status indicators.
+**Action:** Use centered HTML image tags for top-of-file branding and always include `title` attributes on functional badges in future documentation enhancements.

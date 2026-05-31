@@ -1,6 +1,10 @@
+<p align="center">
+  <img src="eng/OpenAI.png" width="128" alt="OpenAI logo" />
+</p>
+
 # OpenAI .NET API library
 
-[![NuGet stable version](https://img.shields.io/nuget/v/openai.svg)](https://www.nuget.org/packages/OpenAI)
+[![NuGet stable version](https://img.shields.io/nuget/v/openai.svg "NuGet stable version")](https://www.nuget.org/packages/OpenAI)
 
 The OpenAI .NET library provides convenient access to the OpenAI REST API from .NET applications.
 
@@ -53,7 +57,7 @@ Note that the code examples included below were written using [.NET 10](https://
 
 ## Using the client library
 
-The full API of this library can be found in the [OpenAI.netstandard2.0.cs](https://github.com/openai/openai-dotnet/blob/main/api/OpenAI.netstandard2.0.cs) file, and there are many [code examples](https://github.com/openai/openai-dotnet/tree/main/examples) to help. For instance, the following snippet illustrates the basic use of the chat completions API:
+The full API of this library can be found in the [OpenAI.netstandard2.0.cs](./api/OpenAI.netstandard2.0.cs) file, and there are many [code examples](./examples) to help. For instance, the following snippet illustrates the basic use of the chat completions API:
 
 ```C# Snippet:ReadMe_ChatCompletion_Basic
 ChatClient client = new(model: "gpt-5.1", apiKey: Environment.GetEnvironmentVariable("OPENAI_API_KEY"));
