@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../eng/OpenAI.png" width="128" alt="OpenAI logo" />
+</p>
+
 # OpenAI with .NET 10 - Getting Started Guide
 
 This readme shows you how to run each OpenAI based sample (.cs) file in this folder directly without a project or additional setup using the latest .NET 10 features.
@@ -175,7 +179,7 @@ Each sample file contains special directives at the top:
 ```csharp
 // SAMPLE: Description of what this sample does
 #:package OpenAI@2.*             // NuGet package reference
-#:property PublishAot=false      // Build properties
+#:property PublishAot false      // Build properties
 
 using OpenAI.Responses;          // Regular C# code follows
 
