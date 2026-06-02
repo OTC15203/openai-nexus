@@ -3,7 +3,7 @@
 #pragma warning disable OPENAI001
 
 #:package OpenAI@2.*
-#:property PublishAot=false
+#:property PublishAot false
 
 using OpenAI.Responses;
 using System.ClientModel;

@@ -2,7 +2,7 @@
 
 #:package OpenAI@2.2.*-*
 #:package ModelContextProtocol.Core@*-*
-#:property PublishAot=false
+#:property PublishAot false
 
 using ModelContextProtocol;
 using ModelContextProtocol.Client;
