@@ -335,7 +335,7 @@ Console.WriteLine(imageUri.AbsoluteUri);
 
 For additional examples, see [OpenAI Examples][examples].
 
-[readme]: https://github.com/openai/openai-dotnet/blob/main/README.md
-[changelog]: https://github.com/openai/openai-dotnet/blob/main/CHANGELOG.md
-[examples]: https://github.com/openai/openai-dotnet/tree/main/examples
+[readme]: ../README.md
+[changelog]: ../CHANGELOG.md
+[examples]: ../examples
 [openai_1110]: https://aka.ms/openai1110
