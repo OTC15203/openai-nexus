@@ -4,6 +4,7 @@
 #pragma warning disable OPENAI001
 
 #:package System.Linq.Async@6.*
+#:property PublishAot=false
 #:package OpenAI@2.*
 
 using OpenAI.Responses;
