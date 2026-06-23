@@ -1,3 +1,5 @@
+<p align="center"><img src="eng/OpenAI.png" alt="OpenAI logo" width="128"></p>
+
 # OpenAI .NET API library
 
 [![NuGet stable version](https://img.shields.io/nuget/v/openai.svg)](https://www.nuget.org/packages/OpenAI)
