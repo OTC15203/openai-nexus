@@ -4,6 +4,7 @@
 #pragma warning disable OPENAI001
 
 #:package OpenAI@2.*
+#:property PublishAot=false
 
 using OpenAI.Responses;
 
