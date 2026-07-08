@@ -198,7 +198,7 @@ using OpenAI.Responses;          // Regular C# code follows
 
 ### Problem: "The property directive needs to have two parts"
 
-- **Solution**: The property directive format should be `#:property PropertyName PropertyValue` (space-separated, not equals sign).
+- **Solution**: The property directive format should be `#:property PropertyName=PropertyValue` (equals sign, not space-separated).
 
 ### Problem: API errors
 
